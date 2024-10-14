@@ -82,23 +82,19 @@ footer{
     justify-content: center;
 }
 
-.destinos-container {
-    position: relative;
-}
 
-.destinos-imagen img {
-  
-    height: auto; 
+.destinos-imagen img { 
     border-radius: 10px; 
 }
 
-.destino-small {
-    flex: 0 0 200px; 
+.destino-chica {
+    flex: 0 0 300px;
+    width: 100%;
     margin: 0 10px; 
     opacity: 0.6; 
 }
 
-.destino-small img {
+.destino-chica img {
     width: 100%;
     height: auto;
     border-radius: 5px; 
@@ -107,12 +103,8 @@ footer{
 .nav-button{
     background-color: transparent; 
     border: none; 
-    font-size: 30px; 
-   
+    font-size: 30px;   
 }
-
-
-
 .nav-button:hover {
     cursor: pointer;
 }
