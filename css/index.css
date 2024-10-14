@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+     
+    justify-content: center;
+    gap: 3rem;
+    background-color: #D9CBAE;
+}
+#enlaces{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    gap: 2rem;
+}
+img{
+    width: 200px;
+    height: 100px;
+}
+a{
+    text-decoration: none;
+}
