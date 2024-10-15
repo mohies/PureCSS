@@ -14,6 +14,7 @@ nav{
     gap: 3rem;
     background-color: #D9CBAE;
     font-weight: 700;
+    
 }
 #enlaces{
     display: flex;
@@ -88,7 +89,7 @@ footer{
 }
 
 .destino-chica {
-    flex: 0 0 300px;
+    flex-basis:300px;
     width: 100%;
     margin: 0 10px; 
     opacity: 0.6; 
