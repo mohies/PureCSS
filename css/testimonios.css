@@ -35,7 +35,82 @@ a {
 }
 
 /*seccion*/
+section{
+    padding: 10rem;
+}
+section h1{
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 2rem;
+}
+section #elementos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+    column-gap: 2rem;
 
+}
+section #elementos div{
+display: grid;
+justify-items: center;
+align-items: center;
+    
+}
+section div img{
+    width: 400px;
+    height: 300px;
+    border-radius: 100%;
+}
+#imagen1 {
+    background-image: url(/imgs/juanjose.jpg);
+    background-position: center top; 
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+}
+#imagen2 {
+    background-image: url(/imgs/manuel.jpg);
+    background-position: center top; 
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+}
+#imagen3 {
+    background-image: url(/imgs/Bella.png);
+    background-position: center top; 
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+}
+#imagen4 {
+    background-image: url(/imgs/Alvaro.png);
+    background-position:  65% top ; 
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+}
+#imagen5 {
+    background-image: url(/imgs/CArlos.jpg);
+    background-size: 200px;
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+}
+#imagen6 {
+    background-image: url(/imgs/Maria.jpg);
+    background-position: center top; 
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%;
+}
+
+#v1,#v2,#v3,#v4,#v5 > #valoracion,#v6 > #valoracion{
+    display: flex;
+}
+
+.checked {
+    color: orange;
+  }
 
 /*footer*/
 footer {
