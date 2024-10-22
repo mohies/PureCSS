@@ -37,6 +37,7 @@ a {
 /*seccion*/
 section{
     padding: 10rem;
+
 }
 section h1{
     text-align: center;
@@ -68,42 +69,42 @@ section div img{
     height: 300px;
     border-radius: 100%;
 }
-#imagen1 {
+section div#imagen1 { /*para que tenga privilegio mas alto*/
     background-image: url(/imgs/juanjose.jpg);
     background-position: center top; 
     width: 200px; 
     height: 200px; 
     border-radius: 50%;
 }
-#imagen2 {
+section div#imagen2 {
     background-image: url(/imgs/manuel.jpg);
     background-position: center top; 
     width: 200px; 
     height: 200px; 
     border-radius: 50%;
 }
-#imagen3 {
+section div#imagen3 {
     background-image: url(/imgs/Bella.png);
     background-position: center top; 
     width: 200px; 
     height: 200px; 
     border-radius: 50%;
 }
-#imagen4 {
+section div#imagen4 {
     background-image: url(/imgs/Alvaro.png);
     background-position:  65% top ; 
     width: 200px; 
     height: 200px; 
     border-radius: 50%;
 }
-#imagen5 {
+section div#imagen5 {
     background-image: url(/imgs/CArlos.jpg);
     background-size: 200px;
     width: 200px; 
     height: 200px; 
     border-radius: 50%;
 }
-#imagen6 {
+section div#imagen6 {
     background-image: url(/imgs/Maria.jpg);
     background-position: center top; 
     width: 200px; 

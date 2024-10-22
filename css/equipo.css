@@ -1,0 +1,113 @@
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Cinzel", serif;
+    }
+    body{
+        background-color: #F0EAD6;
+    }
+    /*navegacion*/
+    nav{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        background-color: #D9CBAE;
+        font-weight: 700;
+        text-shadow: rgb(204, 144, 32) 1px 0 10px;
+        
+    }
+    #enlaces{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        
+        gap: 2rem;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    #introduccion{
+        text-align: center;
+
+    }
+    /*seccion*/
+    section h1{
+        text-align: center;
+        font-size: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    #elementos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2rem;
+        text-align: center;
+        column-gap: 2rem;
+        row-gap: 2rem;
+
+    }
+
+    #elementos img{
+        width: 400px;
+        height: 400px;
+        margin: 1rem 0;
+        border-radius: 20%;
+    
+    }
+
+    #elementos span{
+        font-weight: bold;
+    }
+
+    #elementos div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
+#boton-conoce {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 2rem;
+    }
+    
+#boton {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #285b31; 
+        color: white; 
+        text-decoration: none; 
+        border-radius: 5px; 
+        font-weight: bold; 
+        transition: background-color 0.3s; 
+    }
+    
+#boton:hover {
+        background-color: #1d3d24; /* Color de fondo al pasar el ratón */
+    }
+    
+
+    /*footer*/
+ footer{
+        background-color: #3A5B2A;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        font-weight: 500;
+    }
+ #footer-logo img{
+            width: 200px;
+            height: 100px;
+    }
+
