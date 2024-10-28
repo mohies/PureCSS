@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Cinzel", serif;
+}
+body{
+    background-color: #F0EAD6;
+}
+/*navegacion*/
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    background-color: #D9CBAE;
+    font-weight: 700;
+    text-shadow: rgb(204, 144, 32) 1px 0 10px;
+    
+}
+#enlaces{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    gap: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+#introduccion{
+    text-align: center;
+
+}
+
+/*seccion*/
+section{
+    display: grid;
+    justify-content: center;
+    
+    
+}
+ul{
+    list-style: none;
+}
+
+
+
+/*footer*/
+footer{
+    background-color: #3A5B2A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-weight: 500;
+}
+#footer-logo img{
+        width: 200px;
+        height: 100px;
+}
+
