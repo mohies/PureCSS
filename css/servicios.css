@@ -1,34 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Cinzel", serif;
 }
-body{
+
+body {
     background-color: #F0EAD6;
 }
+
 /*navegacion*/
-nav{
+nav {
     display: flex;
     justify-content: center;
     gap: 3rem;
     background-color: #D9CBAE;
     font-weight: 700;
-    
+
 }
-#enlaces{
+
+#enlaces {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+
     gap: 2rem;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-#introduccion{
+#introduccion {
     text-align: center;
 
 }
@@ -36,30 +39,31 @@ a{
 
 
 /*seccion*/
-#guides{
+#guides {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     margin: 2rem;
     font-weight: 500;
 }
-#guides div{
+
+#guides div {
     padding: 2rem;
     display: grid;
-    align-items: center; 
-    justify-items: center; 
+    align-items: center;
+    justify-items: center;
 
     border-radius: 2%;
 }
 
-#guides img{
+#guides img {
     width: 400px;
     height: 300px;
     border-radius: 3%;
 }
 
 /*footer*/
-footer{
+footer {
     background-color: #3A5B2A;
     display: flex;
     justify-content: space-between;
@@ -67,8 +71,8 @@ footer{
     padding: 10px;
     font-weight: 500;
 }
-#footer-logo img{
-        width: 200px;
-        height: 100px;
-}
 
+#footer-logo img {
+    width: 200px;
+    height: 100px;
+}

@@ -38,13 +38,27 @@ a{
 section{
     display: grid;
     justify-content: center;
-    
+    padding: 2rem;
     
 }
 ul{
     list-style: none;
 }
+form ul{
+    padding: 2rem;
+    display: grid; 
 
+}
+li{
+    display: grid   ;
+    row-gap: 1rem;
+}
+#msg{
+    height: 300px;
+    width: 700px;
+     
+
+}
 
 
 /*footer*/
