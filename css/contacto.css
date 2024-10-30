@@ -15,7 +15,7 @@ nav {
     gap: 3rem;
     background-color: #D9CBAE;
     font-weight: 700;
-    text-shadow: rgb(204, 144, 32) 1px 0 10px;
+    /*text-shadow: rgb(204, 144, 32) 1px 0 10px;*/
 
 }
 
@@ -30,6 +30,7 @@ nav {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 #introduccion {
@@ -102,15 +103,19 @@ li:nth-child(3) input {
 fieldset {
     border: none;
 }
+button{
+    margin-top: 2rem;
+    height:30px;
+}
 
 /*footer*/
 footer {
-    background-color: #3A5B2A;
+    background-color: #D9CBAE;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 #footer-logo img {

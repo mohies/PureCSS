@@ -29,6 +29,7 @@ nav {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 #introduccion {
@@ -52,7 +53,7 @@ a {
     display: grid;
     align-items: center;
     justify-items: center;
-
+    grid-template-rows: 3fr 1fr;
     border-radius: 2%;
 }
 
@@ -64,12 +65,12 @@ a {
 
 /*footer*/
 footer {
-    background-color: #3A5B2A;
+    background-color: #D9CBAE;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 #footer-logo img {
