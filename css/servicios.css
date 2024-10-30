@@ -15,6 +15,7 @@ nav {
     gap: 3rem;
     background-color: #D9CBAE;
     font-weight: 700;
+    flex-wrap: wrap;
 
 }
 
@@ -53,13 +54,13 @@ a {
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     border-radius: 2%;
 }
 
 #guides img {
-    width: 400px;
-    height: 300px;
+    max-width: 100%; /* Ajusta a 100% del contenedor */
+    height: 300px; 
     border-radius: 3%;
 }
 
@@ -76,4 +77,21 @@ footer {
 #footer-logo img {
     width: 200px;
     height: 100px;
+}
+
+@media (max-width: 1024px) {
+    
+    #guides {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    #enlaces{
+        flex-direction: column;
+        
+    }
+    #guides {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
 }

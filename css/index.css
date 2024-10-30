@@ -9,13 +9,16 @@ body {
 }
 
 /*navegacion*/
+
 nav {
     display: flex;
     justify-content: center;
     gap: 3rem;
     background-color: #D9CBAE;
     font-weight: 700;
-
+    flex-wrap: wrap; /* Permite el envolvimiento */
+    
+   
 }
 
 #enlaces {
@@ -23,7 +26,6 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
     gap: 2rem;
 }
 
@@ -32,18 +34,18 @@ a {
     color: black;
 }
 
+/* Introducción */
 #introduccion {
     text-align: center;
-
 }
 
-
-/*video*/
+/* Video */
 #video {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+   
 }
 
 video {
@@ -52,7 +54,7 @@ video {
     object-fit: cover;
 }
 
-/*imagenes*/
+/* Imágenes */
 #destinos {
     text-align: center;
     margin: 50px 0;
@@ -62,23 +64,25 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    padding: 2rem;
 }
 
 .destinos-imagenes {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
-
 
 .destinos-imagen img {
     border-radius: 10px;
+    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
 }
 
 .destino-chica {
-    flex-basis: 300px;
-    width: 100%;
-    margin: 0 10px;
+    flex: 1 1 200px; /* Flexibilidad y ancho mínimo */
+    margin: 10px; /* Espaciado alrededor de las imágenes */
     opacity: 0.6;
 }
 
@@ -98,10 +102,7 @@ video {
     cursor: pointer;
 }
 
-
-
-
-/*footer*/
+/* Footer */
 footer {
     background-color: #D9CBAE;
     display: flex;
@@ -109,67 +110,33 @@ footer {
     align-items: center;
     padding: 10px;
     font-weight: 700;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
 }
 
 #footer-logo img {
     width: 200px;
-    height: 100px;
+    height: auto; /* Mantiene la proporción */
 }
 
-
-
-@media (min-width: 1439px) {
+/* Media Queries */
+@media (max-width: 1024px) {
     nav {
-        padding: 1rem;
-        /* Reduce el padding */
-        flex-direction: column;
-        /* Cambia a columna si es necesario */
-        align-items: center;
-        /* Centra los elementos */
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+        padding: 1rem; /* Añadido espaciado */
     }
 
-    #enlaces {
-        gap: 1rem;
-        /* Ajusta el espacio entre enlaces */
+    #video {
+        height: auto;
     }
 
     .destinos-container {
-        flex-direction: column;
-        /* Cambia a columna en pantallas más pequeñas */
-        align-items: center;
-        /* Centra los elementos */
-        padding: 2rem;
-    }
-
-
-
-
-    section .destino-chica {
-        flex-basis: 200px;
-        margin: 10px 0;
-        /* Margen vertical para separación */
-        width: 100%;
-        margin: 0 10px;
-        opacity: 0.6;
-    }
-
-    .nav-button {
-        font-size: 1.5rem;
-        /* Reduce el tamaño de los botones */
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
     }
 
     footer {
-        flex-direction: column;
-        /* Cambia a columna para pantallas más pequeñas */
-        align-items: center;
-        /* Centra los elementos */
-        padding: 1rem;
-        /* Reduce el padding */
-    }
-
-    #footer-logo img {
-        width: 150px;
-        /* Reduce el tamaño del logo */
+        align-items: center; /* Centra los elementos del pie de página */
+        width: 100%; /* Asegura que ocupe todo el ancho */
     }
 }
 
@@ -177,38 +144,27 @@ footer {
 
 @media (max-width: 768px) {
     nav {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra los elementos */
+        flex-wrap: wrap; /* En caso de que no ocupe que se desplaze abajo */
+        
+    }
+    #enlaces{
+        
         flex-direction: column;
-        /* Cambia la dirección a columna en pantallas más pequeñas */
-        align-items: center;
-        /* Centra los elementos */
     }
 
-    .nav-button {
-        font-size: 1.5rem;
-        /* Reduce el tamaño de los botones */
+    #video {
+       height: auto;
     }
 
-    .destinos-imagenes {
-        flex-direction: column;
-        /* Cambia a columna para pantallas más pequeñas */
+    .destinos-container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
     }
 
-    .destino-chica {
-        flex-basis: 80%;
-        /* Ajusta el tamaño de las imágenes */
-        margin: 10px 0;
-        /* Margen vertical */
-    }
-}
-
-@media (max-width: 480px) {
-    nav {
-        font-size: 0.8rem;
-        /* Reduce el tamaño del texto */
-    }
-
-    #footer-logo img {
-        width: 150px;
-        /* Reduce el tamaño del logo en pantallas pequeñas */
+    footer {
+        flex-direction: column; /* Apila en pantallas pequeñas */
+        align-items: center; /* Centra los elementos del pie de página */
+        width: 100%; /* Asegura que ocupe todo el ancho */
     }
 }
