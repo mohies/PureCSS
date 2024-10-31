@@ -15,6 +15,7 @@ nav {
     gap: 3rem;
     background-color: #D9CBAE;
     font-weight: 700;
+    flex-wrap: wrap;
 }
 
 #enlaces {
@@ -48,8 +49,9 @@ a {
 }
 
 #lugares img {
-    width: 400px;
+    max-width: 90%;
     height: 300px;
+  
     border-radius: 3%;
 }
 
@@ -90,4 +92,22 @@ footer {
 footer p{
     color: black; 
     margin-right:1rem;
+}
+
+
+@media (max-width: 1024px) {
+    
+    #lugares {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    #enlaces{
+        flex-direction: column;
+        
+    }
+    #lugares {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
 }
