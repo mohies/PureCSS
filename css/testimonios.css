@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: #F0EAD6; /* Fondo Principal */
+    background-color: #F0EAD6;
+    /* Fondo Principal */
 }
 
 /*navegacion*/
@@ -15,6 +16,8 @@ nav {
     gap: 3rem;
     background-color: #D9CBAE;
     font-weight: 700;
+    flex-wrap: wrap;
+
 }
 
 #enlaces {
@@ -35,90 +38,111 @@ a {
 }
 
 /*seccion*/
-section{
+section {
     padding: 10rem;
 
 }
-section h1{
-    text-align: center;
-    font-size: 100px;
+
+section h1 {
+    text-align: center; 
+    font-size: 5vw; /* Tamaño de fuente que se ajusta al tamaño de la pantalla */
     margin-bottom: 2rem;
 }
-section p{
+
+section p {
     font-weight: 700;
-} 
-section #elementos{
+}
+
+section #elementos {
+
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    /* ajustar automaticamente las columans */
     row-gap: 2rem;
     column-gap: 2rem;
 
+
 }
-section #elementos div{
-background-color: rgb(236, 236, 236);
-padding: 2rem;
-text-align: center;
-border-radius: 5%;
-display: grid;
-justify-items: center;
-align-items: center;
-    
+
+section #elementos div {
+    background-color: rgb(236, 236, 236);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 5%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    transition: transform 0.2s;
+    /* Suaviza la transición al contraer */
 }
-section div img{
-    width: 400px;
-    height: 300px;
-    border-radius: 100%;
-}
-section div#imagen1 { /*para que tenga privilegio mas alto*/
-    background-image: url(/imgs/juanjose.jpg);
-    background-position: center top; 
-    width: 200px; 
-    height: 200px; 
-    border-radius: 50%;
-}
-section div#imagen2 {
-    background-image: url(/imgs/manuel.jpg);
-    background-position: center top; 
-    width: 200px; 
-    height: 200px; 
-    border-radius: 50%;
-}
-section div#imagen3 {
-    background-image: url(/imgs/Bella.png);
-    background-position: center top; 
-    width: 200px; 
-    height: 200px; 
-    border-radius: 50%;
-}
-section div#imagen4 {
-    background-image: url(/imgs/Alvaro.png);
-    background-position:  65% top ; 
-    width: 200px; 
-    height: 200px; 
-    border-radius: 50%;
-}
-section div#imagen5 {
-    background-image: url(/imgs/CArlos.jpg);
-    background-size: 200px;
-    width: 200px; 
-    height: 200px; 
-    border-radius: 50%;
-}
-section div#imagen6 {
-    background-image: url(/imgs/Maria.jpg);
-    background-position: center top; 
-    width: 200px; 
-    height: 200px; 
+
+section div img {
+    max-width: 100%;
+    height: auto;
     border-radius: 50%;
 }
 
-#v1>#valoracion,#v2>#valoracion,#v3>#valoracion,#v4>#valoracion,#v5 > #valoracion,#v6 > #valoracion{
+section div#imagen1 {
+    /*para que tenga privilegio mas alto*/
+    background-image: url(/imgs/juanjose.jpg);
+    background-position: center top;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+section div#imagen2 {
+    background-image: url(/imgs/manuel.jpg);
+    background-position: center top;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+section div#imagen3 {
+    background-image: url(/imgs/Bella.png);
+    background-position: center top;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+section div#imagen4 {
+    background-image: url(/imgs/Alvaro.png);
+    background-position: 65% top;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+section div#imagen5 {
+    background-image: url(/imgs/CArlos.jpg);
+    background-size: 200px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+section div#imagen6 {
+    background-image: url(/imgs/Maria.jpg);
+    background-position: center top;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#v1>#valoracion,
+#v2>#valoracion,
+#v3>#valoracion,
+#v4>#valoracion,
+#v5>#valoracion,
+#v6>#valoracion {
     display: flex;
 }
 
 .checked {
     color: orange;
-  }
+}
 
 /*footer*/
 footer {
@@ -134,7 +158,28 @@ footer {
     width: 200px;
     height: 100px;
 }
-footer p{
-    color: #FFFFFF; 
-    margin-right:1rem;
+
+footer p {
+    color: black;
+    margin-right: 1rem;
+}
+
+@media (max-width: 1024px) {
+
+    div#elementos {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        /* ajusta automaticamente las columnas grid  */
+    }
+}
+
+@media (max-width: 768px) {
+    #enlaces {
+        flex-direction: column;
+
+    }
+
+    div#elementos {
+        grid-template-columns: 1fr;
+        /* Una columna en móviles */
+    }
 }
