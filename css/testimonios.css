@@ -44,8 +44,9 @@ section {
 }
 
 section h1 {
-    text-align: center; 
-    font-size: 5vw; /* Tamaño de fuente que se ajusta al tamaño de la pantalla */
+    text-align: center;
+    font-size: 5vw;
+    /* Tamaño de fuente que se ajusta al tamaño de la pantalla */
     margin-bottom: 2rem;
 }
 
@@ -56,7 +57,7 @@ section p {
 section #elementos {
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     /* ajustar automaticamente las columans */
     row-gap: 2rem;
     column-gap: 2rem;
@@ -173,13 +174,30 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+
+    nav img {
+        height: auto;
+        max-width: 100%;
+
+    }
+
     #enlaces {
         flex-direction: column;
 
     }
 
-    div#elementos {
+    #reviews {
+        display: grid;
         grid-template-columns: 1fr;
-        /* Una columna en móviles */
+        padding: 1rem;
+
+
     }
 }

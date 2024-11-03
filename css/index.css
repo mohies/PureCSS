@@ -16,9 +16,11 @@ nav {
     gap: 3rem;
     background-color: #D9CBAE;
     font-weight: 700;
-    flex-wrap: wrap; /* Permite el envolvimiento */
-    
-   
+    flex-wrap: wrap;
+    /* Permite el envolvimiento */
+    width: 100%;
+
+
 }
 
 #enlaces {
@@ -45,13 +47,14 @@ a {
     justify-content: center;
     align-items: center;
     height: 100vh;
-   
+
 }
 
 video {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /*cubre el contenedor completo*/
 }
 
 /* Imágenes */
@@ -64,7 +67,8 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten */
     padding: 2rem;
 }
 
@@ -72,17 +76,20 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    font-weight: 500;
+
 }
 
 .destinos-imagen img {
     border-radius: 10px;
-    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+    max-width: 100%;
+    /* Asegura que las imágenes no excedan el ancho del contenedor */
 }
 
 .destino-chica {
-    flex: 1 1 200px; /* Flexibilidad y ancho mínimo */
-    margin: 10px; /* Espaciado alrededor de las imágenes */
+    flex: 1 1 200px;
+    /* Flexibilidad y ancho mínimo */
+    margin: 10px;
     opacity: 0.6;
 }
 
@@ -110,20 +117,25 @@ footer {
     align-items: center;
     padding: 10px;
     font-weight: 700;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten */
 }
 
 #footer-logo img {
     width: 200px;
-    height: auto; /* Mantiene la proporción */
+    height: auto;
+    /* Mantiene la proporción */
 }
 
 /* Media Queries */
 @media (max-width: 1024px) {
     nav {
-        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-        align-items: center; /* Centra los elementos */
-        padding: 1rem; /* Añadido espaciado */
+        flex-direction: column;
+        /* Cambia a columna en pantallas pequeñas */
+        align-items: center;
+        /* Centra los elementos */
+        padding: 1rem;
+        /* Añadido espaciado */
     }
 
     #video {
@@ -131,12 +143,15 @@ footer {
     }
 
     .destinos-container {
-        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        flex-direction: column;
+        /* Cambia a columna en pantallas pequeñas */
     }
 
     footer {
-        align-items: center; /* Centra los elementos del pie de página */
-        width: 100%; /* Asegura que ocupe todo el ancho */
+        align-items: center;
+        /* Centra los elementos del pie de página */
+        width: 100%;
+        /* Asegura que ocupe todo el ancho */
     }
 }
 
@@ -144,27 +159,40 @@ footer {
 
 @media (max-width: 768px) {
     nav {
-        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-        align-items: center; /* Centra los elementos */
-        flex-wrap: wrap; /* En caso de que no ocupe que se desplaze abajo */
-        
-    }
-    #enlaces{
-        
         flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 97%;
+
+    }
+
+    nav img {
+        height: auto;
+        max-width: 100%;
+
     }
 
     #video {
-       height: auto;
+        width: 106%;
+        object-fit: cover;
+
     }
 
+    #enlaces {
+
+        flex-direction: column;
+    }
+
+
+
     .destinos-container {
-        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        flex-direction: column;
+        /* Cambia a columna en pantallas pequeñas */
     }
 
     footer {
-        flex-direction: column; /* Apila en pantallas pequeñas */
-        align-items: center; /* Centra los elementos del pie de página */
-        width: 100%; /* Asegura que ocupe todo el ancho */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 }
